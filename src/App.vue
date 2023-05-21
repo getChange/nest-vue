@@ -20,7 +20,9 @@ const submit = async () => {
     headers: {
       'content-type': 'application/json'
     }
-  }).then(res => res.json())
+  }).then(res => res.json()).then(res => {
+    console.log((res))
+  })
 }
 </script>
 
